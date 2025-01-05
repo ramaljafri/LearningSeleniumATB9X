@@ -1,18 +1,19 @@
 package com.thetestingacademy.ex01_SeleniumBasics;
 
-import org.openqa.selenium.firefox.FireFoxDriver;
+import io.qameta.allure.Description;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class TestSelenium01 {
-
+@Description("Open the App.vmo.cm and get the title")
     @Test
 
     public void test_Selenium01(){
 
 //Open a URL and print the title
 
-        FireFoxDriver driver = new FireFoxDriver();
-        driver.get("https://app.vmo.com");
+        FirefoxDriver driver = new FirefoxDriver();
+        driver.get("https://app.vwo.com");
         System.out.println( driver.getTitle());
 
     }
